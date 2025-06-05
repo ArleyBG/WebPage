@@ -28,7 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
   description.innerHTML = 'Fylo stores all your most important files in one secure location.</br> Access them wherever you need, share and collaborate with</br> friends family, and co-workers.'
 
   const boton = document.getElementById('start');
-  boton.value = 'get started'
   boton.textContent = 'Get Started'
+  boton.href ="#"
 
+  const images = document.querySelectorAll('.features img');
+  const imageSources = [
+    "images/icon-access-anywhere.svg",
+    "images/icon-security.svg",
+    "images/icon-any-file.svg",
+    "images/icon-collaboration.svg"
+  ]
+
+  images.forEach((image, index) => {
+    if (index < imageSources.length) {
+      image.src = imageSources[index];
+    }
+  })
 });
