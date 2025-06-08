@@ -73,5 +73,28 @@ document.addEventListener('DOMContentLoaded', () => {
   asignarValoresElements(titleItem, titles)
   asignarValoresElements(paragraphItem, paragraph)
 
+  let teamImg = document.querySelector('.team img');
+  teamImg.src = 'images/illustration-stay-productive.png'
+
+  let teamTitle = document.querySelector('.team h2');
+  teamTitle.innerHTML = 'Stay productive,<br> wherever you are'
+
+  let teamParagraph = document.querySelector('.team p');
+  teamParagraph.innerHTML = `
+  <p>Never let location be an issue when accessing your files. Fylo has you<br> covered for all of your file storage needs.</p>
+  Securely share files and folders with friends, family and colleagues for live<br> collaboration. No email attachments required.
+  `
+  
+  let teamBoton = document.getElementById('team-link');
+  teamBoton.textContent = "See how Fylo works"
+  teamBoton.href = "#"
+  
+  teamIcon = document.createElement('img');
+  teamIcon.src = "images/icon-arrow.svg"
+  teamIcon.alt = "Icono de flecha"
+  teamIcon.style.marginLeft = "5px"
+
+  teamBoton.appendChild(teamIcon)
+
 
 });

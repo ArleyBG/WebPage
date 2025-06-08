@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-    height: 80%
+    height: 100%
 }
 
 nav {
@@ -80,11 +80,12 @@ nav {
 
 .features { 
     display: grid;
-    margin-top: -250px;
+    margin-top: -220px;
 }
 
 .fondo-curvy {
     position: relative;
+    height: 90%;
     width: 100%;
 }
 
@@ -96,6 +97,8 @@ nav {
     padding: 20px 50px;
     text-align: center;
     align-items: self-start;
+    position: relative;
+    margin-top: -50px;
 }
 
 
@@ -111,16 +114,56 @@ nav {
     margin-bottom: 30px;
 }
 
+.team {
+   background: #181f2b;
+   padding-top: 150px;
+   padding-bottom: 150px;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.team-content-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team-content-rigth h2 {
+    color: #fbfdfd;
+    margin-bottom: 20px;
+}
+
+.team-content-rigth p {
+    color: #d8dbe1;
+    margin-bottom: 20px;
+}
+
+#team-link {
+    color: #679196;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+
+
 @media (min-width: 320px) and (max-width: 700px) {
     .menu-header > li {
         margin-left: 20px;
     }
     #start {
         width: 70%;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
     .columna1, .columna2, .columna3, .columna4 {
-        display: flexbox;
+        display: grid;
         justify-items: center;
         color: #d8dbe1;
     }
@@ -129,7 +172,21 @@ nav {
         grid-template-columns: repeat(1, 1fr);
     }
     .columna1, .columna2, .columna3, .columna4 {
-        margin-bottom: 60px;
+        margin-bottom: 90px;
+    }
+    .logo {
+        height: 50%
+    }
+    .team-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-title br, .team-p br {
+        display: none;
+    }
+    .team-title {
+        text-align: center;
+        margin-top: 50px;
     }
 }
 
@@ -138,15 +195,27 @@ nav {
         width: 50%;
         margin-bottom: 50px;
     }
+    .team-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-title br {
+        display: none;
+    }
+    .team-title {
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
-@media (min-width: 1600px) and (max-width: 2500px) {
+@media (min-width: 1700px) and (max-width: 2500px) {
     .fondo-curvy {
-        height: 80%;
+        height: 60%;
     }
     .features-content {
         position: relative;
-        margin-top: -150px;
+        margin-top: -300px;
+        padding: 0px 400px;
     }
 }
 
