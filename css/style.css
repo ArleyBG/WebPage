@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,8 @@ nav {
     text-decoration: none;
     color: #a6acb4;
     font-size: 100%;
+    max-width: 100%;
+    white-space: nowrap
 }
 
 #content {
@@ -41,23 +44,25 @@ nav {
     padding: 30px;
 }
 
+.content-first {
+    display: grid;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    justify-items: center;
+    gap: 30px;
+}
 .content-first h1{
-    margin-top: 20px;
     color: #fbfdfd;
-    margin-bottom: 20px;
+    max-width: 30%;
 }
 
 .content-first p {
     color: #d8dbe1;
-    margin-bottom: 20px;
     font-size: 18px;
+    max-width: 50%;
 }
 
-.content-first {
-    text-align: center;
-    position: relative;
-    z-index: 9;
-}
 
 .img-file {
     max-width: 100%;
@@ -65,12 +70,11 @@ nav {
 }
 
 #start {
-    width: 16%;
+    width: 20%;
     padding: 15px;
     border-radius: 25px;
     background: #4dc2d3;
     color: #cff3f6;
-    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -94,11 +98,16 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #181f2b;
-    padding: 20px 50px;
+    padding: 0px 50px;
     text-align: center;
     align-items: self-start;
     position: relative;
     margin-top: -50px;
+    justify-items: center;
+}
+
+.columna1, .columna2 {
+    margin-top: -5%;
 }
 
 
@@ -108,31 +117,38 @@ nav {
     grid-template-columns: 1fr;
     color: #d8dbe1;
     margin-bottom: 60px;
-}
-
-.columna1 img, .columna2 img, .columna3 img, .columna4 img {
-    margin-bottom: 30px;
+    max-width: 55%;
+    gap: 20px;
 }
 
 .team {
    background: #181f2b;
-   padding-top: 150px;
+   padding-top: 120px;
    padding-bottom: 150px;
 }
 
 .team-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 60px;
     justify-items: center;
     align-items: center;
     padding: 0px 40px;
+}
+
+.team-content-rigth {
+    padding-right: 10%;
+}
+
+.team-content-left {
+    padding-left: 10%;
 }
 
 .team-content-left img {
     max-width: 100%;
     height: auto;
 }
+
 
 .team-content-rigth h2 {
     color: #fbfdfd;
@@ -201,6 +217,7 @@ nav {
 }
 
 .get-started {
+    display: grid;
     text-align: center;
     color: #d8dbe1;
     background: #1c2230;
@@ -329,9 +346,12 @@ input::placeholder {
     }
     .columna1, .columna2, .columna3, .columna4 {
         margin-bottom: 90px;
+        max-width: 80%;
     }
     .logo {
-        height: 50%
+        height: 50%;
+        max-width: 80%;
+        padding: 15px;
     }
     .team-content {
         display: grid;
@@ -343,6 +363,47 @@ input::placeholder {
     .team-title {
         text-align: center;
         margin-top: 50px;
+    }
+    .team-content-rigth {
+        padding: 0;
+    }
+    .team-content-left {
+        padding: 0;
+    }
+    .columna1, .columna2 {
+        margin-top: 50px;
+    }
+    .content-first h1{
+    max-width: 80%;
+    }
+    .content-first p {
+        max-width: 90%;
+    }
+    .experiences-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    #email {
+        width: 85%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #form-button {
+        width: 100%;
+        margin: 0;
+    }
+    .list-footer {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 50px;
+    }
+    .list-footer li {
+        display: grid;
+        justify-self: left;
+    }
+    .list-one img {
+        justify-self: left;
     }
 }
 
@@ -362,6 +423,35 @@ input::placeholder {
         text-align: center;
         margin-top: 50px;
     }
+    .team-content-rigth {
+        padding: 20px;
+    }
+    .team-content-left {
+        padding: 0;
+    }
+    .columna1, .columna2 {
+        margin-top: 40px;
+    }
+    .content-first h1{
+    max-width: 60%;
+    }
+    .content-first p {
+        max-width: 80%;
+    }
+    .experiences-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    #email {
+        width: 92%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #form-button {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media (min-width: 1700px) and (max-width: 2500px) {
@@ -370,8 +460,11 @@ input::placeholder {
     }
     .features-content {
         position: relative;
-        margin-top: -300px;
+        margin-top: -250px;
         padding: 0px 400px;
+    }
+    .columna1, .columna2 {
+        margin-top: 0;
     }
 }
 

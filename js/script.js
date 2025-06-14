@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   let titulo = document.querySelector('#content h1');
-  titulo.innerHTML = 'All your files in one secure location,</br> accessible anywhere.'
+  titulo.innerHTML = 'All your files in one secure location, accessible anywhere.'
 
   let description = document.querySelector('#content p');
-  description.innerHTML = 'Fylo stores all your most important files in one secure location.</br> Access them wherever you need, share and collaborate with</br> friends family, and co-workers.'
+  description.innerHTML = 'Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.'
 
   const boton = document.getElementById('start');
   boton.textContent = 'Get Started'
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
 
   let paragraph = [
-    "The ability to use a smartphone, tablet, or computer<br> to access your account means your files follow you<br> everywhere.",
-    "2-factor authentication and user-controlled encryption are<br> just a couple of the security features we allow to help<br> secure your files.",
-    "Securely share files and folders with friends, family and<br> colleagues for live collaboration. No email attachments<br> required.",
-    "Whether you're sharing holidays photos or work<br> documents, Fylo has you covered allowing for all file<br> types to be securely stored and shared."
+    "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
+    "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
+    "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
+    "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."
   ]
 
   asignarValoresElements(titleItem, titles)
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let teamParagraph = document.querySelector('.team p');
   teamParagraph.innerHTML = `
-  <p>Never let location be an issue when accessing your files. Fylo has you<br> covered for all of your file storage needs.</p>
-  Securely share files and folders with friends, family and colleagues for live<br> collaboration. No email attachments required.
+  <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+  Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
   `
   
   let teamBoton = document.getElementById('team-link');
